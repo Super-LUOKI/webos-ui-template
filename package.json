@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@web-os-ui/os-ui": "^0.0.8",
+    "@web-os-ui/os-ui": "^0.0.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

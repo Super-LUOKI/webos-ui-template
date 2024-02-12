@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@web-os-ui/os-ui':
-    specifier: ^0.0.8
-    version: 0.0.8
+    specifier: ^0.0.9
+    version: 0.0.9
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -1554,8 +1554,8 @@ packages:
       '@types/node': 20.11.17
     dev: true
 
-  /@web-os-ui/os-ui@0.0.8:
-    resolution: {integrity: sha512-N8CiWP6YQ4+z11iG3O1I5Q4KMM+6i43ezQVPnntFLNCKfCL20uEak8ZBdOMYQNsb18O8i2OYAr90NJEPwb38Jg==}
+  /@web-os-ui/os-ui@0.0.9:
+    resolution: {integrity: sha512-2oMJgfrbY4nZS7Jh0qZvdDok38DSbisq0jZb8xO02vy3hMHDVVUiYLg2LAewTJwhlLalhdnndpmb5v1iTW4GjA==}
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
