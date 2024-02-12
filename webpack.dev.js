@@ -2,9 +2,9 @@ const { merge } = require("webpack-merge")
 const base = require("./webpack.base.js")
 
 module.exports = merge(base, {
-	mode: "development", // 开发模式
+	mode: "development",
 	devServer: {
-		open: true, // 编译完自动打开浏览器
-		port: 7001,
+		open: true,
+		port: 8001,
 	},
 })

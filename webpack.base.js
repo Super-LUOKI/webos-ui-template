@@ -2,19 +2,18 @@ const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
-	entry: path.resolve(__dirname, "../src/index.tsx"),
+	entry: path.resolve(__dirname, "./src/index.js"),
 	output: {
-		path: path.resolve(__dirname, "../build"), // 打包后的代码放在dist目录下
-		filename: "[name].[hash:8].js", // 打包的文件名
+		path: path.resolve(__dirname, "./build"),
+		filename: "[name].[hash:8].js",
 	},
 	resolve: {
-		// 配置 extensions 来告诉 webpack 在没有书写后缀时，以什么样的顺序去寻找文件
-		extensions: [".mjs", ".js", ".json", ".jsx", ".ts", ".tsx"], // 如果项目中只有 tsx 或 ts 可以将其写在最前
+		extensions: [".mjs", ".js", ".json", ".jsx"],
 	},
 	module: {
 		rules: [
 			{
-				test: /.(jsx?)|(tsx?)$/,
+				test: /.jsx?$/,
 				exclude: /node_modules/,
 				use: {
 					loader: "babel-loader",
@@ -28,7 +27,6 @@ module.exports = {
 									corejs: 3, // 使用 core-js@3 版本
 								},
 							],
-							["@babel/preset-typescript"],
 							["@babel/preset-react"],
 						],
 					},
@@ -38,7 +36,7 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: path.resolve(__dirname, "../index.html"), // 使用自定义模板
+			template: path.resolve(__dirname, "./index.html"), // 使用自定义模板
 		}),
 	],
 }
